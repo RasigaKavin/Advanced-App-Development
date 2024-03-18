@@ -1,0 +1,278 @@
+/* CSS */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(189, 157, 135);
+    color: white;
+    font-family: "Lucida Handwriting", Times, cursive;
+
+   
+  }
+ 
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color:rgb(189, 157, 135);
+    padding: 10px;
+    font-family: "Lucida Handwriting", Times, cursive;
+    
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 50px;
+    text-decoration: none;
+    transition: color 3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #000000;
+  }
+  
+  section {
+    padding: 40px;
+    text-align: center;
+    opacity: 1.0;
+    transform: rotateY(20px);
+  
+   
+  }
+  
+  section:nth-child(even) {
+    background-color:rgb(175, 152, 135);
+  }
+  
+  .section-heading {
+    margin-bottom: 90px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  section.visible {
+    opacity: 1.0;
+    
+  }
+  
+  img {
+    max-width: 40%;
+    height: 30ch;
+    opacity: 1.0;
+    transition: opacity ;
+    border-radius: 200px;
+    position: relative;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    justify-content: space-between;
+  }
+ 
+  
+  img:hover {
+    opacity: 1.0;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(137, 104, 81);
+    color: #fff;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  .proud-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    color: white;
+    background-color: white;
+    font-size: larger;
+    font-family: 'Lucida Sans', "Lucida Handwriting", Times, cursive, Geneva, Verdana, sans-serif;
+    position: relative;
+    
+  }
+  
+  .proud-text {
+    max-width: 80%;
+  }
+.works-section {
+    background-image: url("https://www.stewalkerphotography.com/wp-content/uploads/2023/03/black-and-white-wedding-photos23.jpg");
+    background-position: left top;
+    padding: 100%;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    font-family: var(--heading-font-font-family);
+    font-style: var(--heading-font-font-style);
+    font-weight: 100 !important;
+    font-size: calc((var(--heading-3-size-value) - 1)* 1.2vw + 1rem);
+    
+}
+
+.proud-section {
+    position: relative;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://junebugweddings.com/gallery/Natasha%20Du%20Preez%20Photography/natasha-du-preez-photography-junebug-weddings-627.jpg');
+    background-size: cover;
+    filter: blur(3px); /* Apply blur effect */
+   
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+  }
+  
+  .works-section {
+    display: flex;
+    align-items: center;
+    padding: 200px;
+    
+  }
+  
+  .works-section img {
+    flex: 1;
+    max-width: 50%;
+    
+  }
+  
+  .text-block {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .slideshow {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  .slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 20%;
+    border-style: ridge;
+
+   
+    
+  }
+  
+  .slideshow img.active {
+    opacity: 1;
+  }
+  
+  .scrolling-text {
+    width: 100%;
+    padding: 20px 0;
+    transform: translateY(2.6px);
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  .scrolling-text-container {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #ccc; /* Example border styling */
+    padding: 10px;
+  }
+  
+  .scrolling-text marquee {
+    font-size: 40px; /* Adjust the font size as needed */
+    
+  }
+  
+@keyframes textChange {
+    0% { opacity: 1; }
+    25% { opacity: 0; }
+    50% { opacity: 1; }
+    75% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+ 
+
+  .changing-text {
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 1s ease; /* Apply a transition effect */
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: larger;
+    color: black;
+  }
+  
+  .fade-in {
+    opacity: 5; /* Make the text visible */
+  }
+  .image-container-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .image-item-horizontal {
+    text-align: center;
+  }
+  
+  .image-item-horizontal img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.features-section .image-container-horizontal img {
+    width: 700px; 
+    height: auto;
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: cover;
+  }
+  
+@keyframes morph {
+    0% { letter-spacing: normal; }
+    50% { letter-spacing: 15px; }
+    100% { letter-spacing: normal; }
+  }
+  
+  .text-block p1 {
+    animation: morph 20s infinite; 
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  }
+  .text-block p1 {
+    background-color: black; /* Specify your desired background color */
+    padding: 5px; /* Adjust padding as needed */
+  }
+ 
+  .why-section {
+    position: relative;
+    padding: 100px;
+  }
+  
+  .logo-container {
+    position: absolute;
+    top: 70px;
+    left: 300px;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure the logo appears above other content */
+  }
+  
+  
